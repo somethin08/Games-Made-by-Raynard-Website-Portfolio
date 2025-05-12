@@ -1,0 +1,83 @@
+body {
+    background-color: #002542;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+}
+
+
+.container {
+    margin: auto;
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    min-height: 75vh;
+    margin-top: 150px;
+}
+
+h1 {
+    font-size: 10rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-family: 'BirchLeaf';
+    color: #d6e4b3;
+
+}
+
+.divider {
+    height: 50vh;
+}
+
+.arrow {    
+    font-size: 5rem;
+    font-weight: normal;
+    margin-bottom: 100px;
+    font-family: 'BirchLeaf';
+    color: #d6e4b3;
+    rotate: 90deg ; 
+    margin-top: 225px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    min-height: 60vh;
+    font-family: 'DePixelKlein';
+    margin-top: 225px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #d6e4b3;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #9FAA86;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #001f3f;;
+    }
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@font-face {
+    font-family: 'BirchLeaf' ;
+    src: url(Pages/Font/BirchLeaf.ttf);
+}
+
+@font-face {
+    font-family: 'DePixelKlein' ;
+    src: url(Pages/Font/DePixelKlein.ttf);
+}

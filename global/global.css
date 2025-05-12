@@ -1,0 +1,217 @@
+:root {
+    --col1: #d6e4b3; --col1a: #9FAA86;
+    --col2: #002b4f; --col2a: #000f1b;
+}
+
+/* global styles */
+
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+.border {border: 3px solid var(--col1);}
+
+/* text */
+.helve {font-family: 'helvetica'; line-height: 1;}
+@font-face { font-family: "BirchLeaf"; src: url(../global/fonts/BirchLeaf.ttf);
+}.bl {font-family: 'BirchLeaf'; line-height: 1;}
+@font-face { font-family: "DePixelKlein"; src: url(../global/fonts/DePixelKlein.ttf);
+}.pix {font-family: 'DePixelKlein'; line-height: 1;}
+@font-face { font-family: "somefont"; src: url(../path/there.ttf);
+}.somefont {font-family: 'somefont'; line-height: 1;}
+
+/* default text tag styles */
+/* optional
+p {font-family: ''; font-size: 15px;}
+h6 {font-family: ''; font-size: 20px;}
+h5 {font-family: ''; font-size: 30px;}
+h4 {font-family: ''; font-size: 40px;}
+h3 {font-family: ''; font-size: 50px;}
+h2 {font-family: ''; font-size: 60px;}
+h1 {font-family: ''; font-size: 70px;} 
+*/
+
+.ts100 {font-size: 100px;}
+.ts75 {font-size: 75px;}
+.ts50 {font-size: 50px;}
+.ts40 {font-size: 40px;}
+.ts30 {font-size: 30px;}
+.ts25 {font-size: 25px;}
+.ts20 {font-size: 20px;}
+.ts15 {font-size: 15px;}
+.ts10 {font-size: 10px;}
+.ts5 {font-size: 5px;}
+
+.bold {font-weight: bold;}
+.bolder {font-weight: bolder;}
+.italic {font-style: italic;}
+.nowrap {white-space: nowrap;}
+.ellipsis {text-overflow: ellipsis;}
+
+a {text-decoration: none;}
+
+/* colors */
+
+.ctsp {color: transparent;} .btsp {background-color: transparent;}
+.col1 {color: var(--col1);} .bcol1 {background-color: var(--col1);}
+.col2 {color: var(--col2);} .bcol2 {background-color: var(--col2);}
+
+/* display sizing */
+
+.add, .add720, .add1280 {display: none;}
+
+@media (max-width: 600px) {
+    .rem {display: none;}
+    .add {display: flex;}}
+
+@media (max-width: 720px) {
+    .rem720 {display: none;}
+    .add720 {display: flex;}}
+
+@media (max-width: 1280px) {
+    .rem1280 {display: none;}
+    .add1280 {display: flex;}}
+
+
+    
+/* display */
+
+.con {display: flex;}
+.vcon {display: flex; flex-direction: column;}
+.none {display: none;}
+
+.fixed {position: fixed;}
+.abs {position: absolute;}
+.sticky {position: sticky;}
+.rel {position: relative;}
+
+.sbet {justify-content: space-between;}
+.seve {justify-content: space-evenly;}
+
+.cen {justify-content: center;
+    align-items: center;}
+.vcen {justify-content: center;}
+.hcen {align-items: center;}
+
+.fwrap {flex-wrap: wrap;}
+
+/* sizing */
+.vh300 {height: 300vh;} .vw300 {width: 300vw;}
+.vh200 {height: 200vh;} .vw200 {width: 200vw;}
+.vh100 {height: 100vh;} .vw100 {width: 100vw;}
+.vh50 {height: 50vh;} .vw50 {width: 50vw;}
+.vh25 {height: 25vh;} .vw25 {width: 25vw;}
+.vh10 {height: 10vh;} .vw10 {width: 10vw;}
+
+.w100 {width: 100%;} .h100 {height: 100%;}
+.w50 {width: 50%;} .h50 {height: 50%;}
+.w25 {width: 25%;} .h25 {height: 25%;}
+
+.f3 {flex: 3;} .f2 {flex: 2;} .f1 {flex: 1;}
+
+.ar11 {aspect-ratio: 1/1;} .ar12 {aspect-ratio: 1/2;} .ar13 {aspect-ratio: 1/3;}
+.ar21 {aspect-ratio: 2/1;} .ar23 {aspect-ratio: 2/3;} .ar25 {aspect-ratio: 2/5;}
+.ar31 {aspect-ratio: 3/1;} .ar32 {aspect-ratio: 3/2;} .ar34 {aspect-ratio: 3/4;}
+
+/* overflow */
+
+.ovx-a {overflow-x: auto;} .ovx-h {overflow-x: hidden;}
+.ovy-a {overflow-y: auto;} .ovy-h {overflow-y: hidden;}
+
+/* spacing */
+
+.pad0 {padding: 0.1px;} .mag0 {margin: 0.1px;}
+
+.pad30 {padding: 30px;} .mag30 {margin: 30px;}
+.pad25 {padding: 25px;} .mag25 {margin: 25px;}
+.pad20 {padding: 20px;} .mag20 {margin: 20px;}
+.pad15 {padding: 15px;} .mag15 {margin: 15px;}
+.pad10 {padding: 10px;} .mag10 {margin: 10px;}
+.pad5 {padding: 5px;} .mag5 {margin: 5px;}
+
+.pad30a {padding: 30px 0;} .mag30a {margin: 30px 0;}
+.pad25a {padding: 25px 0;} .mag25a {margin: 25px 0;}
+.pad20a {padding: 20px 0;} .mag20a {margin: 20px 0;}
+.pad15a {padding: 15px 0;} .mag15a {margin: 15px 0;}
+.pad10a {padding: 10px 0;} .mag10a {margin: 10px 0;}
+.pad5a {padding: 5px 0;} .mag5a {margin: 5px 0;}
+
+.pad30b {padding: 0 30px;} .mag30b {margin: 0 30px;}
+.pad25b {padding: 0 25px;} .mag25b {margin: 0 25px;}
+.pad20b {padding: 0 20px;} .mag20b {margin: 0 20px;}
+.pad15b {padding: 0 15px;} .mag15b {margin: 0 15px;}
+.pad10b {padding: 0 10px;} .mag10b {margin: 0 10px;}
+.pad5b {padding: 0 5px;} .mag5b {margin: 0 5px;}
+
+.gap100 {gap: 100px;} .rgap100 {row-gap: 100px;}
+.gap75 {gap: 75px;} .rgap75 {row-gap: 75px;}
+.gap50 {gap: 50px;} .rgap50 {row-gap: 50px;}
+.gap35 {gap: 35px;} .rgap35 {row-gap: 35px;}
+.gap30 {gap: 30px;} .rgap30 {row-gap: 30px;}
+.gap25 {gap: 25px;} .rgap25 {row-gap: 25px;}
+.gap20 {gap: 20px;} .rgap20 {row-gap: 20px;}
+.gap15 {gap: 15px;} .rgap15 {row-gap: 15px;}
+.gap10 {gap: 10px;} .rgap10 {row-gap: 10px;}
+.gap5 {gap: 5px;} .rgap5 {row-gap: 5px;}
+
+/* radius */
+
+.rad50 {border-radius: 50%;}
+.rad25 {border-radius: 25%;}
+.rad10 {border-radius: 10%;} .rad10p {border-radius: 10px;}
+.rad5 {border-radius: 5%;} .rad5p {border-radius: 5px;}
+
+/* image styling */
+
+.imgh50 {height: 50px;} .imgw50 {width: 50px;}
+.imgh40 {height: 40px;} .imgw40 {width: 40px;}
+.imgh30 {height: 30px;} .imgw30 {width: 30px;}
+.imgh20 {height: 20px;} .imgw20 {width: 20px;}
+.imgh10 {height: 10px;} .imgw10 {width: 10px;}
+
+.img50 {height: 50px; width: 50px;}
+.img45 {height: 45px; width: 45px;}
+.img40 {height: 40px; width: 40px;}
+.img35 {height: 35px; width: 35px;}
+.img30 {height: 30px; width: 30px;}
+.img25 {height: 25px; width: 25px;}
+.img20 {height: 20px; width: 20px;}
+
+.fit-img {min-width: 100%; min-height: 100%;}
+.wmin-img {min-width: 100%;} .hmin-img {min-height: 100%;}
+.wmax-img {max-width: 100%;} .hmax-img {max-height: 100%;}
+
+/* reset styles */
+
+input.res, button.res {border: none;}
+input.res:focus {outline: none;}
+
+/* buttons & hover effects */
+
+.button {transition: all 0.2s ease; cursor: pointer;}
+
+.button.col1:hover {color: var(--col1a);} .button.bcol1:hover {background-color: var(--col1a);}
+.button.col2:hover {color: var(--col2a);} .button.bcol2:hover {background-color: var(--col2a);}
+
+.hov-ul:hover {text-decoration: underline;}
+.hov-lt:hover {text-decoration: line-through;}
+.hov-dt:hover {text-decoration: dotted;}
+.hov-db:hover {text-decoration: double;}
+.hov-ol:hover {text-decoration: overline;}
+.hov-wv:hover {text-decoration: wavy;}
+
+/* Hide text highlight */
+
+.nosel {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Standard */
+}
+
+/* true styles */
+
+.true-wrapper {
+    max-width: 100vw;
+    max-height: 100vh;
+    aspect-ratio: 2/1;}
