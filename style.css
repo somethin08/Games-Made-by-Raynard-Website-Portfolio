@@ -19,17 +19,16 @@ body {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: normal;
     margin-bottom: 20px;
     font-family: 'BirchLeaf';
     color: #d6e4b3;
 }
 
-
 @media (min-width: 85vh) {
     h1 {
-        font-size: 8rem;
+        font-size: 7rem;
     }
 }
 
